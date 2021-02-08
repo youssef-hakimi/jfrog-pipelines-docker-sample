@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: my_github                       # <-- replace with your integration
-      path: jfrogw/jfrog-pipelines-docker-sample    # <-- replace with your repository name
+      path: youssef-hakimi/jfrog-pipelines-docker-sample    # <-- replace with your repository name
       branches:
         include: master
 
