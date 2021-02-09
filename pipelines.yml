@@ -16,7 +16,7 @@ resources:
       imageTag: latest
       autoPull: true
         
-   - name: dbp_build_info
+  - name: dbp_build_info
     type: BuildInfo
     configuration:
       sourceArtifactory: art
