@@ -74,5 +74,5 @@ pipelines:
             - name: art
           inputResources:
             - name: dbp_build_info
-           outputResources:
+          outputResources:
             - name: dbp_promoted_build_info
