@@ -56,5 +56,5 @@ pipelines:
         configuration:
           inputSteps:
             - name: docker_push
-           outputResources:
+          outputResources:
             - name: dbp_build_info
