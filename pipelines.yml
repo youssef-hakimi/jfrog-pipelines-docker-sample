@@ -22,6 +22,13 @@ resources:
       sourceArtifactory: art
       buildName: dbp_build
       buildNumber: 1    
+      
+  - name: dbp_promoted_build_info
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: dbp_build
+      buildNumber: 1
 
 pipelines:
   - name: pipeline_dbp
@@ -58,3 +65,14 @@ pipelines:
             - name: docker_push
           outputResources:
             - name: dbp_build_info
+            
+      - name: promote_dbp_build
+        type: PromoteBuild
+        configuration:
+          targetRepository: demo-pipelines
+          integrations:
+            - name: art
+          inputResources:
+            - name: dbp_build_info
+           outputResources:
+            - name: dbp_promoted_build_info
