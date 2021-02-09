@@ -7,7 +7,6 @@ resources:
       branches:
         include: master
 
-
   - name: dbp_image
     type: Image
     configuration:
